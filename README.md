@@ -19,10 +19,5 @@
 
 </div>
 
-## 📚 **Unidades del Portafolio**
-
-| 🧠 **Unidad 1** | [📂 Abrir](Unidad1.md) |
-|:---------------:|:---------------------:|
-| ⚙️ **Unidad 2** | [📂 Abrir](Unidad2.md) |
-| 🧩 **Unidad 3** | [📂 Abrir](Unidad3.md) |
+## 📚 **Ejercicios Realizados**
 
