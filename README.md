@@ -19,4 +19,4 @@
 
 </div>
 
-### 📚 **Ejercicios Realizados** [📂 Abrir]((https://github.com/pilarnaranjo/Base-de-Datos/blob/86181cd5cd01df0cc2699b380adb3d91a0c7d1d4/AA/Indice.md)
+### 📚 **Ejercicios Realizados** [📂 Abrir](https://github.com/pilarnaranjo/Base-de-Datos/blob/86181cd5cd01df0cc2699b380adb3d91a0c7d1d4/AA/Indice.md)
