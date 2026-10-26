@@ -19,4 +19,4 @@
 ### 🌷 3. SQL
 📌 Practica la creación de tablas, consultas y manipulación de datos mediante sentencias SQL.
 
-🔗 [Ingresar](Proximamente) (#)
+🔗 [Ingresar][Proximamente] (#)
