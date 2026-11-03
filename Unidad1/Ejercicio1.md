@@ -17,15 +17,12 @@
 
 ### 📐 Modelo Entidad-Relación
 
-Representación gráfica de las entidades, atributos y relaciones que intervienen en el sistema.
+<img width="592" height="242" alt="image" src="https://github.com/user-attachments/assets/c058a0d9-6266-4d13-964b-5d2ba60c0a6b" />
 
-![Modelo Entidad-Relación](./imagenes/modelo_entidad_relacion.png)
 
 ---
 
 ### 🔗 Modelo Relacional
-
-Transformación del modelo Entidad-Relación al esquema relacional, mediante tablas, claves primarias y claves foráneas.
 
 <img width="761" alt="Modelo Relacional" src="https://github.com/user-attachments/assets/e598276f-4b36-47b3-8f3f-fde364923297" />
 
