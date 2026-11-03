@@ -1,60 +1,58 @@
-
-<div align="left">
+<div align="center">
 
 <img src="https://img.shields.io/badge/UNIDAD-01-DCC6F0?style=for-the-badge&labelColor=8064A2" />
-<img src="https://img.shields.io/badge/MODELO-RELACIONAL-EDE3F8?style=for-the-badge&labelColor=A987CE" />
+
+# 🟣 Modelo Relacional
+
+*Ejemplos y ejercicios prácticos de diseño de bases de datos.*
 
 </div>
 
-En esta sección se presentan los ejemplos y ejercicios desarrollados durante la unidad, correspondientes al diseño de modelos relacionales.
-
 ---
 
-## 🪻 Ejemplos Desarrollados
-
-### 📚 Ejemplo 1. Sistema de Biblioteca
+### 📚 01. Sistema de Biblioteca
 
 Una biblioteca registra libros y autores. Un libro puede tener varios autores y un autor varios libros. Los socios toman libros prestados; de cada préstamo interesan la fecha de retiro y la de devolución.
 
 **Modelo Relacional**
 
-![Modelo Relacional](./imagenes/ejemplo_01_biblioteca.png)
+![Sistema de Biblioteca]<img width="761" height="269" alt="image" src="https://github.com/user-attachments/assets/e598276f-4b36-47b3-8f3f-fde364923297" />
+)
 
 ---
 
-### 🍇 Ejemplo 2. Pedidos de Restaurante
+### 🍇 02. Pedidos de Restaurante
 
 Los clientes realizan pedidos que contienen varios platos con distinta cantidad. Los platos se agrupan en categorías. Cada pedido lo atiende un único mesero. El precio del plato debe registrarse tal como estaba al momento del pedido, aunque luego cambie.
 
 **Modelo Relacional**
-
-![Modelo Relacional](./imagenes/ejemplo_02_restaurante.png)
+(./imagenes/ejemplo_02_restaurante.png)
 
 ---
 
-### 🪷 Ejemplo 3. Clínica Médica
+### 🪷 03. Clínica Médica
 
 Los pacientes solicitan citas; cada cita la atiende un médico a un paciente en fecha, hora y consultorio. De algunas citas se genera una receta que incluye medicamentos con dosis y duración. Cada médico pertenece a una especialidad.
 
 **Modelo Relacional**
 
-![Modelo Relacional](./imagenes/ejemplo_03_clinica.png)
+![Clínica Médica](./imagenes/ejemplo_03_clinica.png)
 
 ---
 
-### ✈️ Ejemplo 4. Sistema de Aerolínea
+### ✈️ 04. Sistema de Aerolínea
 
 Una aerolínea opera vuelos (cada uno con número, fecha, origen y destino), cada vuelo lo realiza un avión. Los pasajeros realizan reservas para un vuelo específico, indicando asiento y tarifa pagada en el momento de la reserva.
 
 **Modelo Relacional**
 
-![Modelo Relacional](./imagenes/ejemplo_04_aerolinea.png)
+![Sistema de Aerolínea](./imagenes/ejemplo_04_aerolinea.png)
 
 ---
 
-## 🪻 Ejercicios Propuestos
+## 🟣 Ejercicios Propuestos
 
-### 🎼 Ejercicio 5. Empresa Discográfica
+### 🎼 05. Empresa Discográfica
 
 Una empresa discográfica necesita modelar los datos sobre sus diferentes recursos según las siguientes características:
 
@@ -66,21 +64,21 @@ Una empresa discográfica necesita modelar los datos sobre sus diferentes recurs
 
 **Modelo Relacional**
 
-![Modelo Relacional](./imagenes/ejercicio_05_discografica.png)
+![Empresa Discográfica](./imagenes/ejercicio_05_discografica.png)
 
 ---
 
-### 💻 Ejercicio 6. Tienda Informática
+### 💻 06. Tienda Informática
 
 Se desea crear una aplicación para la gestión de una tienda informática. La tienda dispone de una serie de productos que se venden a los clientes. De cada producto informático se desea guardar el código, descripción, precio y número de existencias. De cada cliente se desea guardar el código, nombre, apellidos, dirección y número telefónico. Un cliente puede comprar varios productos en la tienda y un mismo producto puede ser comprado por varios clientes. Cada vez que se compre un artículo quedará registrada la compra en la base de datos junto con la fecha en la que se compró el artículo. La tienda tiene contactos con varios proveedores que son los que suministran los productos. Un mismo producto puede ser suministrado por varios proveedores. De cada proveedor se desea guardar el código, nombres, apellidos, dirección, provincia y número de teléfono.
 
 **Modelo Relacional**
 
-![Modelo Relacional](./imagenes/ejercicio_06_tienda_informatica.png)
+![Tienda Informática](./imagenes/ejercicio_06_tienda_informatica.png)
 
 ---
 
-### 🎧 Ejercicio 7. Discos Musicales
+### 🎧 07. Discos Musicales
 
 ● La tienda vende discos de diferentes géneros musicales y cantantes
 
@@ -94,11 +92,11 @@ Se desea crear una aplicación para la gestión de una tienda informática. La t
 
 **Modelo Relacional**
 
-![Modelo Relacional](./imagenes/ejercicio_07_discos_musicales.png)
+![Discos Musicales](./imagenes/ejercicio_07_discos_musicales.png)
 
 ---
 
-### 🚚 Ejercicio 8. Camiones
+### 🚚 08. Camiones
 
 Se desea informatizar la gestión de una empresa de transporte que reparte paquetes por toda España. Los encargados de llevar los paquetes son los camioneros, de los que se quiere guardar la cédula, nombre, teléfono, dirección, salario y población en que vive. De los paquetes transportados interesa conocer el código del paquete, descripción, destinatario y dirección del destinatario.
 
@@ -108,11 +106,11 @@ De los camiones que llevan los camioneros, interesa conocer la matrícula, model
 
 **Modelo Relacional**
 
-![Modelo Relacional](./imagenes/ejercicio_08_camiones.png)
+![Camiones](./imagenes/ejercicio_08_camiones.png)
 
 ---
 
-### 🐾 Ejercicio 9. Veterinaria
+### 🐾 09. Veterinaria
 
 ● Del propietario interesa: cédula, apellidos, nombres, dirección , teléfonos
 
@@ -148,23 +146,18 @@ De los camiones que llevan los camioneros, interesa conocer la matrícula, model
 
 **Modelo Relacional**
 
-![Modelo Relacional](./imagenes/ejercicio_09_veterinaria.png)
+![Veterinaria](./imagenes/ejercicio_09_veterinaria.png)
 
 ---
 
 <div align="center">
 
-<img src="https://img.shields.io/badge/PORTAFOLIO-ACADÉMICO-DCC6F0?style=flat-square&labelColor=8064A2" />
+<img src="https://img.shields.io/badge/UNIVERSIDAD-NACIONAL_DE_LOJA-DCC6F0?style=flat-square&labelColor=8064A2" />
 
-### 💜 Portafolio Digital de Aprendizaje
-
-**Universidad Nacional de Loja**
+**💜 Portafolio Digital de Aprendizaje**
 
 Carrera de Computación
 
 *Septiembre 2026 – Febrero 2027*
 
 </div>
-
-</div>
-
