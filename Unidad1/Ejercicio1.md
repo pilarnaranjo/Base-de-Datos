@@ -30,33 +30,35 @@
 
 ### 💻 Código SQL
 ```SQL
-Create Table Libro (
-Id_Libro int Primary Key
-)
+CREATE TABLE Libro (
+    Id_Libro INT PRIMARY KEY
+);
 
-Create Table Autor (
-Id_Autor int Primary Key
-)
+CREATE TABLE Autor (
+    Id_Autor INT PRIMARY KEY
+);
 
-Create Table Libro_Autor (
-Id_Libro int,
-Id_Autor int,
-Foreign Key (Id_Libro) references Libro (Id_Libro),
-Foreign Key (Id_Autor) refences Autor (Id_Autor),
-)
+CREATE TABLE Libro_Autor (
+    Id_Libro INT NOT NULL,
+    Id_Autor INT NOT NULL,
+    PRIMARY KEY (Id_Libro, Id_Autor),
+    FOREIGN KEY (Id_Libro) REFERENCES Libro (Id_Libro),
+    FOREIGN KEY (Id_Autor) REFERENCES Autor (Id_Autor)
+);
 
-Create Table Socio (
-Id_Socio int Primary Key
-)
+CREATE TABLE Socio (
+    Id_Socio INT PRIMARY KEY
+);
 
-Create Table Prestamo (
-Id_Socio int,
-Id_Libro int,
-Fecha_Retiro DATE NOT NULL,
-Fecha_Devolucion DATE NOT NULL,
-Foreign Key (Id_Libro) references Libro (Id_Libro),
-Foreign Key (Id_Autor) refences Autor (Id_Autor)
-)
+CREATE TABLE Prestamo (
+    Id_Socio INT NOT NULL,
+    Id_Libro INT NOT NULL,
+    Fecha_Retiro DATE NOT NULL,
+    Fecha_Devolucion DATE,
+    Primary Key (id_libro, id_socio),
+    FOREIGN KEY (Id_Socio) REFERENCES Socio (Id_Socio),
+    FOREIGN KEY (Id_Libro) REFERENCES Libro (Id_Libro)
+);
 ```
 ---
 
