@@ -28,10 +28,42 @@
 ---
 
 ### 💻 Código SQL
+```SQL
+CREATE TABLE Cliente (
+    Id_Cliente INT PRIMARY KEY
+);
 
-Scripts correspondientes a la creación y definición de las estructuras de la base de datos.
+CREATE TABLE Mesero (
+    Id_Mesero INT PRIMARY KEY
+);
 
-[📂 Consultar scripts SQL](./codigo_sql/)
+CREATE TABLE Categoria (
+    Id_Categoria INT PRIMARY KEY
+);
+
+CREATE TABLE Platos (
+    Id_Plato INT PRIMARY KEY,
+    Id_Categoria INT NOT NULL,
+    FOREIGN KEY (Id_Categoria) REFERENCES Categoria (Id_Categoria)
+);
+
+CREATE TABLE Pedido (
+    Id_Pedido INT PRIMARY KEY,
+    Id_Cliente INT NOT NULL,
+    Id_Mesero INT NOT NULL,
+    FOREIGN KEY (Id_Cliente) REFERENCES Cliente (Id_Cliente),
+    FOREIGN KEY (Id_Mesero) REFERENCES Mesero (Id_Mesero)
+);
+
+CREATE TABLE Detalle_Pedido (
+    Id_Pedido INT NOT NULL,
+    Id_Plato INT NOT NULL,
+    Cantidad INT NOT NULL,
+    Precio_Plato DECIMAL(10,2) NOT NULL,
+    PRIMARY KEY (Id_Pedido, Id_Plato),
+    FOREIGN KEY (Id_Pedido) REFERENCES Pedido (Id_Pedido),
+    FOREIGN KEY (Id_Plato) REFERENCES Platos (Id_Plato)
+);
 
 ---
 
