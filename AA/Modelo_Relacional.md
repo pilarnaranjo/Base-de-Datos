@@ -16,8 +16,8 @@ Una biblioteca registra libros y autores. Un libro puede tener varios autores y 
 
 **Modelo Relacional**
 
-![Sistema de Biblioteca]<img width="761" height="269" alt="image" src="https://github.com/user-attachments/assets/e598276f-4b36-47b3-8f3f-fde364923297" />
-)
+<img width="761" height="269" alt="image" src="https://github.com/user-attachments/assets/e598276f-4b36-47b3-8f3f-fde364923297" />
+
 
 ---
 
