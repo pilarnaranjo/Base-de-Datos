@@ -52,7 +52,6 @@ El contenido del curso se encuentra organizado de manera modular, permitiendo di
 <div align="left">
 
 <img src="https://img.shields.io/badge/UNIDAD-01-DCC6F0?style=for-the-badge&labelColor=8064A2" />
-<img src="https://img.shields.io/badge/MODELO-RELACIONAL-EDE3F8?style=for-the-badge&labelColor=A987CE" />
 
 </div>
 
