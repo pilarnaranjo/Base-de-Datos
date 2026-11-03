@@ -64,7 +64,7 @@ En esta unidad se recopilan las actividades relacionadas con el análisis, dise�
 | Categoría | Descripción | Acceso |
 |:--|:--|:--:|
 | 📐 **Modelo Entidad-Relación** | Diseño conceptual de bases de datos. | [Explorar →](./Unidad_01/01_modelo_conceptual/) |
-| 🔗 **Modelo Relacional** | Representación de entidades, atributos y relaciones. | [Explorar →](./Unidad_01/02_modelo_relacional/) |
+| 🔗 **Modelo Relacional** | Representación de entidades, atributos y relaciones. | [Explorar →]([./Unidad_01/02_modelo_relacional/](https://github.com/pilarnaranjo/Base-de-Datos/blob/3b556e532bcc484596473a7e13eaf88e6017ae11/AA/Modelo_Relacional.md)) |
 | 💻 **Código SQL** | Implementación y consultas de bases de datos. | [Explorar →](./Unidad_01/03_scripts_sql/) |
 
 ---
