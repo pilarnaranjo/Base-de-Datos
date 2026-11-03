@@ -29,11 +29,35 @@
 ---
 
 ### 💻 Código SQL
+```SQL
+Create Table Libro (
+Id_Libro int Primary Key
+)
 
-Scripts correspondientes a la creación y definición de las estructuras de la base de datos.
+Create Table Autor (
+Id_Autor int Primary Key
+)
 
-[📂 Consultar scripts SQL](./codigo_sql/)
+Create Table Libro_Autor (
+Id_Libro int,
+Id_Autor int,
+Foreign Key (Id_Libro) references Libro (Id_Libro),
+Foreign Key (Id_Autor) refences Autor (Id_Autor),
+)
 
+Create Table Socio (
+Id_Socio int Primary Key
+)
+
+Create Table Prestamo (
+Id_Socio int,
+Id_Libro int,
+Fecha_Retiro DATE NOT NULL,
+Fecha_Devolucion DATE NOT NULL,
+Foreign Key (Id_Libro) references Libro (Id_Libro),
+Foreign Key (Id_Autor) refences Autor (Id_Autor)
+)
+```
 ---
 
 <div align="center">
