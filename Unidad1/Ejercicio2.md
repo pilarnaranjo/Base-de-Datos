@@ -64,8 +64,7 @@ CREATE TABLE Detalle_Pedido (
     FOREIGN KEY (Id_Pedido) REFERENCES Pedido (Id_Pedido),
     FOREIGN KEY (Id_Plato) REFERENCES Platos (Id_Plato)
 );
-
-´´´
+```
 
 ---
 
