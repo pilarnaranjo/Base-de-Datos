@@ -38,9 +38,9 @@ El contenido del curso se encuentra organizado de manera modular, permitiendo di
  ├── 📜 README.md
  └── 📂 Unidades/
       ├── 📁 Unidad_01/
-      │    ├── 📄 01_modelo_conceptual/
+      │    ├── 📄 01_modelo_entidad_relacion/
       │    ├── 📄 02_modelo_relacional/
-      │    └── 📄 03_scripts_sql/
+      │    └── 📄 03_codigo_sql/
       ├── 📁 Unidad_02/
       └── 📁 Unidad_03/
 ```
