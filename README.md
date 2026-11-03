@@ -1,6 +1,6 @@
 <div align="center">
 
-# 🔮 Portafolio Digital de Aprendizaje
+# 🟪 Portafolio Digital de Aprendizaje
 ### 🗄️ Base de Datos
 
 ---
