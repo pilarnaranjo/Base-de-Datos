@@ -29,43 +29,15 @@
 
 ---
 
-## 🗂️ Arquitectura del Repositorio
 
-El contenido del curso se encuentra organizado de manera modular, permitiendo diferenciar los conceptos teóricos, el diseño de bases de datos y su implementación mediante scripts SQL.
+## 📚 Unidades de Aprendizaje
 
-```text
-📦 Base-de-Datos/
- ├── 📜 README.md
- └── 📂 Unidades/
-      ├── 📁 Unidad_01/
-      │    ├── 📄 01_modelo_entidad_relacion/
-      │    ├── 📄 02_modelo_relacional/
-      │    └── 📄 03_codigo_sql/
-      ├── 📁 Unidad_02/
-      └── 📁 Unidad_03/
-```
 
----
+| <img src="https://img.shields.io/badge/UNIDAD-01-DCC6F0?style=for-the-badge&labelColor=8064A2" /> | [ Ingresar](./Unidades/Unidad_01/) |
+|:---:|:---:|
+| <img src="https://img.shields.io/badge/UNIDAD-02-DCC6F0?style=for-the-badge&labelColor=8064A2" /> | [ Ingresar](./Unidades/Unidad_02/) |
+| <img src="https://img.shields.io/badge/UNIDAD-03-DCC6F0?style=for-the-badge&labelColor=8064A2" /> | [ Ingresar](./Unidades/Unidad_03/) |
 
----
-
-<div align="left">
-
-<img src="https://img.shields.io/badge/UNIDAD-01-DCC6F0?style=for-the-badge&labelColor=8064A2" />  
-
-</div>
-
-## Unidad 1 — Fundamentos de Bases de Datos
-
-En esta unidad se recopilan las actividades relacionadas con el análisis, diseño y representación de bases de datos, mediante modelos conceptuales, relacionales y consultas SQL.
-
-### 🪻 Contenido de la unidad
-
-| Categoría | Descripción | Acceso |
-|:--|:--|:--:|
-| 📐 **Modelo Entidad-Relación** | Diseño conceptual de bases de datos. | [Explorar →](./Unidad_01/01_modelo_conceptual/) |
-| 🔗 **Modelo Relacional** | Representación de entidades, atributos y relaciones. | [Explorar →](https://github.com/pilarnaranjo/Base-de-Datos/blob/3b556e532bcc484596473a7e13eaf88e6017ae11/AA/Modelo_Relacional.md) |
-| 💻 **Código SQL** | Implementación y consultas de bases de datos. | [Explorar →](./Unidad_01/03_scripts_sql/) |
 
 ---
 
@@ -82,6 +54,5 @@ En esta unidad se recopilan las actividades relacionadas con el análisis, dise�
 <sub>Septiembre 2026 — Febrero 2027</sub>
 
 </div>
-
 
 
