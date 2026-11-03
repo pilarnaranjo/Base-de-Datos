@@ -51,11 +51,11 @@ El contenido del curso se encuentra organizado de manera modular, permitiendo di
 
 <div align="left">
 
-<img src="https://img.shields.io/badge/UNIDAD-01-DCC6F0?style=for-the-badge&labelColor=8064A2" />
+<img src="https://img.shields.io/badge/UNIDAD-01-DCC6F0?style=for-the-badge&labelColor=8064A2" />  
 
 </div>
 
-## 🟣 Unidad 1 — Fundamentos de Bases de Datos
+## Unidad 1 — Fundamentos de Bases de Datos
 
 En esta unidad se recopilan las actividades relacionadas con el análisis, diseño y representación de bases de datos, mediante modelos conceptuales, relacionales y consultas SQL.
 
