@@ -1,19 +1,22 @@
+
 <div align="center">
 
 # 🟪 Portafolio Digital de Aprendizaje
 ### 🗄️ Base de Datos
 
----
-
-<img src="https://img.shields.io/badge/Universidad-UNL-8A2BE2?style=for-the-badge&logo=education&logoColor=white" />
-<img src="https://img.shields.io/badge/Ciclo-3ro_%22A%22-9370DB?style=for-the-badge" />
-<img src="https://img.shields.io/badge/Estado-En_Desarrollo-BA55D3?style=for-the-badge" />
+<img src="https://img.shields.io/badge/Universidad-UNL-DCC6F0?style=for-the-badge&logoColor=white" />
+<img src="https://img.shields.io/badge/Ciclo-3ro_%22A%22-EDE3F8?style=for-the-badge&logoColor=white" />
+<img src="https://img.shields.io/badge/Estado-En_Desarrollo-C8A9E8?style=for-the-badge&logoColor=white" />
 
 ---
+
+*Repositorio académico destinado a recopilar, organizar y documentar los conocimientos y actividades desarrolladas durante el componente de Base de Datos.*
 
 </div>
 
-## 📌 Datos Informativos
+---
+
+## 🪻 Datos Informativos
 
 | Componente | Detalle |
 | :--- | :--- |
@@ -28,12 +31,13 @@
 
 ## 🗂️ Arquitectura del Repositorio
 
-El contenido del curso está estructurado de manera modular para diferenciar el diseño conceptual, relacional y la implementación técnica.
+El contenido del curso se encuentra organizado de manera modular, permitiendo diferenciar los conceptos teóricos, el diseño de bases de datos y su implementación mediante scripts SQL.
 
 ```text
 📦 Base-de-Datos/
  ├── 📜 README.md
- └── 📁 Unidad_01/
+ └── 📂 Unidades/
+      ├── 📁 Unidad_01/
       │    ├── 📄 01_modelo_conceptual/
       │    ├── 📄 02_modelo_relacional/
       │    └── 📄 03_scripts_sql/
@@ -41,10 +45,22 @@ El contenido del curso está estructurado de manera modular para diferenciar el 
       └── 📁 Unidad_03/
 ```
 
-## 🟪 Unidad 1
+---
 
-| Categoría | Descripción | Acceso a Ejercicios |
+## 🟣 Unidad 1 — Fundamentos de Bases de Datos
+
+En esta unidad se recopilan las actividades relacionadas con el análisis, diseño y representación de bases de datos.
+
+| Categoría | Descripción | Acceso |
 | :--- | :--- | :---: |
-| 📐 **Modelo Conceptual** | Diagramas Entidad-Relación (DER) con enunciados. | [📂 Explorar](./Unidades/Unidad_01/01_modelo_conceptual/) |
-| 🔗 **Modelo Relacional** | Tablas, claves ($PK$, $FK$) y restricciones. | [📂 Explorar](./Unidades/Unidad_01/02_modelo_relacional/) |
-| 💻 **Scripts SQL** | Código DDL para creación de bases de datos. | [📂 Explorar](./Unidades/Unidad_01/03_scripts_sql/) | 
+| 📐 **Modelo Entidad-Relación** | Diseño conceptual de bases de datos. | [📂 Explorar](./Unidad_01/01_modelo_conceptual/) |
+| 🔗 **Modelo Relacional** | Representación de entidades, atributos y relaciones. | [📂 Explorar](./Unidad_01/02_modelo_relacional/) |
+| 💻 **Código SQL** | Implementación y consultas de bases de datos. | [📂 Explorar](./Unidad_01/03_scripts_sql/) |
+
+---
+
+<div align="center">
+
+*Portafolio Digital de Aprendizaje — Base de Datos*
+
+</div>
