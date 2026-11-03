@@ -33,10 +33,18 @@ El contenido del curso está estructurado de manera modular para diferenciar el 
 ```text
 📦 Base-de-Datos/
  ├── 📜 README.md
- └── 📂 Unidades/
-      ├── 📁 Unidad_01/
+ └── 📁 Unidad_01/
       │    ├── 📄 01_modelo_conceptual/
       │    ├── 📄 02_modelo_relacional/
       │    └── 📄 03_scripts_sql/
       ├── 📁 Unidad_02/
       └── 📁 Unidad_03/
+```
+
+## 🟪 Unidad 1
+
+| Categoría | Descripción | Acceso a Ejercicios |
+| :--- | :--- | :---: |
+| 📐 **Modelo Conceptual** | Diagramas Entidad-Relación (DER) con enunciados. | [📂 Explorar](./Unidades/Unidad_01/01_modelo_conceptual/) |
+| 🔗 **Modelo Relacional** | Tablas, claves ($PK$, $FK$) y restricciones. | [📂 Explorar](./Unidades/Unidad_01/02_modelo_relacional/) |
+| 💻 **Scripts SQL** | Código DDL para creación de bases de datos. | [📂 Explorar](./Unidades/Unidad_01/03_scripts_sql/) | 
