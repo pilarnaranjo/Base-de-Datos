@@ -26,7 +26,8 @@ Una biblioteca registra libros y autores. Un libro puede tener varios autores y 
 Los clientes realizan pedidos que contienen varios platos con distinta cantidad. Los platos se agrupan en categorías. Cada pedido lo atiende un único mesero. El precio del plato debe registrarse tal como estaba al momento del pedido, aunque luego cambie.
 
 **Modelo Relacional**
-(./imagenes/ejemplo_02_restaurante.png)
+
+<img width="532" height="286" alt="image" src="https://github.com/user-attachments/assets/e2afb27e-6dc7-4f86-93c8-fa191705de73" />
 
 ---
 
@@ -36,7 +37,7 @@ Los pacientes solicitan citas; cada cita la atiende un médico a un paciente en 
 
 **Modelo Relacional**
 
-![Clínica Médica](./imagenes/ejemplo_03_clinica.png)
+<img width="595" height="313" alt="image" src="https://github.com/user-attachments/assets/c69cdd2f-910d-4a53-88b6-dde866d8f494" />
 
 ---
 
@@ -46,7 +47,7 @@ Una aerolínea opera vuelos (cada uno con número, fecha, origen y destino), cad
 
 **Modelo Relacional**
 
-![Sistema de Aerolínea](./imagenes/ejemplo_04_aerolinea.png)
+<img width="583" height="241" alt="image" src="https://github.com/user-attachments/assets/fae3e22e-44ed-4bf3-85fb-770a3f8a0f81" />
 
 ---
 
@@ -64,7 +65,7 @@ Una empresa discográfica necesita modelar los datos sobre sus diferentes recurs
 
 **Modelo Relacional**
 
-![Empresa Discográfica](./imagenes/ejercicio_05_discografica.png)
+<img width="576" height="220" alt="image" src="https://github.com/user-attachments/assets/73f977b0-d473-4021-8fa8-6234866984b0" />
 
 ---
 
@@ -74,7 +75,7 @@ Se desea crear una aplicación para la gestión de una tienda informática. La t
 
 **Modelo Relacional**
 
-![Tienda Informática](./imagenes/ejercicio_06_tienda_informatica.png)
+<img width="800" height="287" alt="image" src="https://github.com/user-attachments/assets/4368b53c-f836-4bae-a089-9260911f74c6" />
 
 ---
 
@@ -92,7 +93,7 @@ Se desea crear una aplicación para la gestión de una tienda informática. La t
 
 **Modelo Relacional**
 
-![Discos Musicales](./imagenes/ejercicio_07_discos_musicales.png)
+<img width="565" height="261" alt="image" src="https://github.com/user-attachments/assets/e4b314e1-77a0-4460-8b82-57a525c65679" />
 
 ---
 
@@ -106,7 +107,7 @@ De los camiones que llevan los camioneros, interesa conocer la matrícula, model
 
 **Modelo Relacional**
 
-![Camiones](./imagenes/ejercicio_08_camiones.png)
+<img width="750" height="246" alt="image" src="https://github.com/user-attachments/assets/8efb5552-b2e9-42a6-b028-b7771c9f1437" />
 
 ---
 
@@ -146,7 +147,7 @@ De los camiones que llevan los camioneros, interesa conocer la matrícula, model
 
 **Modelo Relacional**
 
-![Veterinaria](./imagenes/ejercicio_09_veterinaria.png)
+<img width="796" height="429" alt="image" src="https://github.com/user-attachments/assets/a99bd884-63d3-4753-a9d9-c60f39faf36f" />
 
 ---
 
