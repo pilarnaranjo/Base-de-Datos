@@ -29,9 +29,48 @@
 
 ### 💻 Código SQL
 
-Scripts correspondientes a la creación y definición de las estructuras de la base de datos.
+```SQL
+CREATE TABLE Producto (
+    Codigo_producto INT PRIMARY KEY,
+    descripcion VARCHAR(100) NOT NULL,
+    precio DECIMAL(10,2) NOT NULL,
+    numero_existencia INT NOT NULL
+);
 
-[📂 Consultar scripts SQL](./codigo_sql/)
+CREATE TABLE Cliente (
+    Codigo_cliente INT PRIMARY KEY,
+    nombre VARCHAR(50) NOT NULL,
+    apellidos VARCHAR(50) NOT NULL,
+    direccion VARCHAR(100),
+    telefono VARCHAR(15)
+);
+
+CREATE TABLE Proveedor (
+    Codigo_proveedor INT PRIMARY KEY,
+    nombres VARCHAR(50) NOT NULL,
+    apellidos VARCHAR(50) NOT NULL,
+    direccion VARCHAR(100),
+    provincia VARCHAR(50),
+    telefono VARCHAR(15)
+);
+
+CREATE TABLE Compra (
+    Codigo_producto INT NOT NULL,
+    Codigo_cliente INT NOT NULL,
+    fecha_compra DATE NOT NULL,
+    PRIMARY KEY (Codigo_producto, Codigo_cliente, fecha_compra),
+    FOREIGN KEY (Codigo_producto) REFERENCES Producto (Codigo_producto),
+    FOREIGN KEY (Codigo_cliente) REFERENCES Cliente (Codigo_cliente)
+);
+
+CREATE TABLE Suministrado (
+    Codigo_producto INT NOT NULL,
+    Codigo_proveedor INT NOT NULL,
+    PRIMARY KEY (Codigo_producto, Codigo_proveedor),
+    FOREIGN KEY (Codigo_producto) REFERENCES Producto (Codigo_producto),
+    FOREIGN KEY (Codigo_proveedor) REFERENCES Proveedor (Codigo_proveedor)
+);
+```
 
 ---
 
