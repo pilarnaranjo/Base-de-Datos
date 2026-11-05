@@ -39,9 +39,41 @@
 
 ### 💻 Código SQL
 
-Scripts correspondientes a la creación y definición de las estructuras de la base de datos.
+```SQL
+CREATE TABLE Genero_Musical (
+    Identificador INT PRIMARY KEY
+);
 
-[📂 Consultar scripts SQL](./codigo_sql/)
+CREATE TABLE Cantante (
+    Id_Cantante INT PRIMARY KEY,
+    nombre VARCHAR(50) NOT NULL,
+    pais VARCHAR(50) NOT NULL
+);
+
+CREATE TABLE Disco (
+    Id_disco INT PRIMARY KEY,
+    titulo VARCHAR(100) NOT NULL,
+    precio DECIMAL(10,2) NOT NULL,
+    Id_genero INT NOT NULL,
+    Id_cantante INT NOT NULL,
+    FOREIGN KEY (Id_genero) REFERENCES Genero_Musical (Identificador),
+    FOREIGN KEY (Id_cantante) REFERENCES Cantante (Id_Cantante)
+);
+
+CREATE TABLE Cancion (
+    Identificador INT PRIMARY KEY,
+    titulo VARCHAR(100) NOT NULL
+);
+
+CREATE TABLE Disco_Cancion (
+    Id_disco INT NOT NULL,
+    Id_cancion INT NOT NULL,
+    posicion INT NOT NULL,
+    PRIMARY KEY (Id_disco, Id_cancion),
+    FOREIGN KEY (Id_disco) REFERENCES Disco (Id_disco),
+    FOREIGN KEY (Id_cancion) REFERENCES Cancion (Identificador)
+);
+```
 
 ---
 
