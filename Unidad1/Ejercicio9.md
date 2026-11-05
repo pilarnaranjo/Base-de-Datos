@@ -61,9 +61,70 @@
 
 ### 💻 Código SQL
 
-Scripts correspondientes a la creación y definición de las estructuras de la base de datos.
+```SQL
+CREATE TABLE Propietario (
+    Cedula VARCHAR(10) PRIMARY KEY,
+    apellidos VARCHAR(50) NOT NULL,
+    nombres VARCHAR(50) NOT NULL,
+    direccion VARCHAR(100)
+);
 
-[📂 Consultar scripts SQL](./codigo_sql/)
+CREATE TABLE Propietario_Telefono (
+    Cedula VARCHAR(10) NOT NULL,
+    telefono VARCHAR(15) NOT NULL,
+    PRIMARY KEY (Cedula, telefono),
+    FOREIGN KEY (Cedula) REFERENCES Propietario (Cedula)
+        ON DELETE CASCADE
+);
+
+CREATE TABLE Mascota (
+    Id_mascota INT PRIMARY KEY,
+    nombre VARCHAR(50) NOT NULL,
+    fecha_nacimiento DATE,
+    tipo VARCHAR(30),
+    Cedula_propietario VARCHAR(10) NOT NULL,
+    FOREIGN KEY (Cedula_propietario) REFERENCES Propietario (Cedula)
+);
+
+CREATE TABLE Familiar_Contacto (
+    Cedula_propietario VARCHAR(10) NOT NULL,
+    Cedula_Familiar VARCHAR(10) NOT NULL,
+    nombre VARCHAR(50) NOT NULL,
+    telefono VARCHAR(15),
+    PRIMARY KEY (Cedula_propietario, Cedula_Familiar),
+    FOREIGN KEY (Cedula_propietario) REFERENCES Propietario (Cedula)
+        ON DELETE CASCADE
+);
+
+CREATE TABLE Personal_Clinica (
+    Codigo INT PRIMARY KEY,
+    Cedula_Personal VARCHAR(10) NOT NULL UNIQUE,
+    nombre VARCHAR(50) NOT NULL
+);
+
+CREATE TABLE Veterinario (
+    Codigo INT PRIMARY KEY,
+    especialidad VARCHAR(50),
+    fecha_alta DATE,
+    FOREIGN KEY (Codigo) REFERENCES Personal_Clinica (Codigo)
+);
+
+CREATE TABLE Auxiliar (
+    Codigo INT PRIMARY KEY,
+    base_cotizacion DECIMAL(10,2),
+    FOREIGN KEY (Codigo) REFERENCES Personal_Clinica (Codigo)
+);
+
+CREATE TABLE Consulta (
+    Id_mascota INT NOT NULL,
+    Codigo_veterinario INT NOT NULL,
+    fecha DATE NOT NULL,
+    diagnostico VARCHAR(200),
+    PRIMARY KEY (Id_mascota, Codigo_veterinario, fecha),
+    FOREIGN KEY (Id_mascota) REFERENCES Mascota (Id_mascota),
+    FOREIGN KEY (Codigo_veterinario) REFERENCES Veterinario (Codigo)
+);
+```
 
 ---
 
