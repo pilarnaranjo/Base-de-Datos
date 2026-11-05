@@ -29,10 +29,32 @@
 
 ### 💻 Código SQL
 
-Scripts correspondientes a la creación y definición de las estructuras de la base de datos.
+```SQL
+CREATE TABLE Avion (
+    Id_avion INT PRIMARY KEY
+);
 
-[📂 Consultar scripts SQL](./codigo_sql/)
+CREATE TABLE Vuelo (
+    numero_vuelo INT PRIMARY KEY,
+    fecha DATE NOT NULL,
+    origen VARCHAR(30) NOT NULL,
+    destino VARCHAR(30) NOT NULL,
+    Id_avion INT NOT NULL,
+    FOREIGN KEY (Id_avion) REFERENCES Avion (Id_avion)
+);
 
+CREATE TABLE Pasajero (
+    Id_pasajero INT PRIMARY KEY
+);
+
+CREATE TABLE Reserva (
+    numero_vuelo INT NOT NULL,
+    Id_pasajero INT NOT NULL,
+    PRIMARY KEY (numero_vuelo, Id_pasajero),
+    FOREIGN KEY (numero_vuelo) REFERENCES Vuelo (numero_vuelo),
+    FOREIGN KEY (Id_pasajero) REFERENCES Pasajero (Id_pasajero)
+);
+```
 ---
 
 <div align="center">
