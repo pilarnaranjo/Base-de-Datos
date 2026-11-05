@@ -37,9 +37,34 @@ Una empresa discográfica necesita modelar los datos sobre sus diferentes recurs
 
 ### 💻 Código SQL
 
-Scripts correspondientes a la creación y definición de las estructuras de la base de datos.
 
-[📂 Consultar scripts SQL](./codigo_sql/)
+```SQL
+CREATE TABLE Manager (
+    Id_manager INT PRIMARY KEY,
+    nombre VARCHAR(20)
+);
+
+CREATE TABLE Artista (
+    NIF VARCHAR(9) PRIMARY KEY,
+    nombre_completo VARCHAR(50) NOT NULL,
+    Id_manager INT NOT NULL,
+    FOREIGN KEY (Id_manager) REFERENCES Manager (Id_manager)
+);
+
+CREATE TABLE Evento (
+    Id_evento INT PRIMARY KEY,
+    fecha_celebracion DATE NOT NULL,
+    numero_asistentes INT NOT NULL
+);
+
+CREATE TABLE Participan (
+    NIF VARCHAR(9) NOT NULL,
+    Id_evento INT NOT NULL,
+    PRIMARY KEY (NIF, Id_evento),
+    FOREIGN KEY (NIF) REFERENCES Artista (NIF),
+    FOREIGN KEY (Id_evento) REFERENCES Evento (Id_evento)
+);
+```
 
 ---
 
