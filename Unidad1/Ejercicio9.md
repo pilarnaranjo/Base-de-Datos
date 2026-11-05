@@ -74,7 +74,6 @@ CREATE TABLE Propietario_Telefono (
     telefono VARCHAR(15) NOT NULL,
     PRIMARY KEY (Cedula, telefono),
     FOREIGN KEY (Cedula) REFERENCES Propietario (Cedula)
-        ON DELETE CASCADE
 );
 
 CREATE TABLE Mascota (
@@ -93,7 +92,6 @@ CREATE TABLE Familiar_Contacto (
     telefono VARCHAR(15),
     PRIMARY KEY (Cedula_propietario, Cedula_Familiar),
     FOREIGN KEY (Cedula_propietario) REFERENCES Propietario (Cedula)
-        ON DELETE CASCADE
 );
 
 CREATE TABLE Personal_Clinica (
