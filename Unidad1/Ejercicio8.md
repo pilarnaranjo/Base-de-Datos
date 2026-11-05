@@ -33,10 +33,49 @@ De los camiones que llevan los camioneros, interesa conocer la matrícula, model
 
 ### 💻 Código SQL
 
-Scripts correspondientes a la creación y definición de las estructuras de la base de datos.
+```SQL
 
-[📂 Consultar scripts SQL](./codigo_sql/)
+CREATE TABLE Camionero (
+    Cedula VARCHAR(10) PRIMARY KEY,
+    nombre VARCHAR(50) NOT NULL,
+    telefono VARCHAR(15),
+    direccion VARCHAR(100),
+    salario DECIMAL(10,2),
+    poblacion VARCHAR(50)
+);
 
+CREATE TABLE Camion (
+    Matricula VARCHAR(10) PRIMARY KEY,
+    modelo VARCHAR(50),
+    tipo VARCHAR(50),
+    potencia INT
+);
+
+CREATE TABLE Provincia (
+    Id_provincia INT PRIMARY KEY,
+    nombre VARCHAR(50) NOT NULL
+);
+
+CREATE TABLE Paquete (
+    Codigo INT PRIMARY KEY,
+    descripcion VARCHAR(100),
+    destinatario VARCHAR(100) NOT NULL,
+    direccion VARCHAR(100) NOT NULL,
+    cedula_camionero VARCHAR(10) NOT NULL,
+    id_provincia INT NOT NULL,
+    FOREIGN KEY (cedula_camionero) REFERENCES Camionero (Cedula),
+    FOREIGN KEY (id_provincia) REFERENCES Provincia (Id_provincia)
+);
+
+CREATE TABLE Camionero_Camion (
+    Cedula_Camionero VARCHAR(10) NOT NULL,
+    Matricula VARCHAR(10) NOT NULL,
+    fecha DATE NOT NULL,
+    PRIMARY KEY (Cedula_Camionero, Matricula, fecha),
+    FOREIGN KEY (Cedula_Camionero) REFERENCES Camionero (Cedula),
+    FOREIGN KEY (Matricula) REFERENCES Camion (Matricula)
+);
+```
 ---
 
 <div align="center">
